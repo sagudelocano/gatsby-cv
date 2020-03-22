@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import clsx from 'clsx'
 import { Wrapper } from './styles'
-import navbarStyles from "../header.module.css"
+import headerStyles from "../header.module.css"
 
 const sections = [
 	{
@@ -27,7 +28,7 @@ function NavbarLinks ({ desktop }) {
 			{
 				sections.map((item, index) => (
 					<AnchorLink
-						style={{color: section === item.title ? '#ffffff' : '#FFB8B8' }}
+						className={clsx({ [headerStyles.menuItem]: true, [headerStyles.active]: section === item.title})}
 						key={index} href={item.href}
 						onClick={() => clickMenu(item.title)}
 					>
