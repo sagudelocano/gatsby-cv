@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background: transparent;
+  position: fixed;
   width: 100%;
+  background: #CC4646;
+  z-index: 50;
+  border-radius: 0;
+  top: 0px;
+  border-bottom: 1px solid #F57676;
 `;
 
 export const Overlay = styled.div`

@@ -1,0 +1,10 @@
+.logo {
+    color: #ffffff !important;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+.active {
+    color: #ffffff !important;
+}

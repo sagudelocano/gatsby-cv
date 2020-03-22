@@ -15,6 +15,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    
     {
       resolve: 'gatsby-source-graphql',
       options: {
@@ -69,6 +70,15 @@ module.exports = {
         theme_color: config.themeColor,
         display: 'minimal-ui',
         icon: './static/favicon/favicon-512.png',
+      },
+    },
+    {
+      resolve: `gatsby-theme-material-ui`,
+      options: {
+        stylesConfig: {
+          // disableAutoprefixing: true,
+          // disableMinification: true
+        },
       },
     },
     'gatsby-plugin-offline',
